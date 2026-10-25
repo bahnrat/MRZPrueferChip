@@ -46,7 +46,7 @@ keiner Verbindung zum BSI oder zur ICAO.
 
 - Keine Internet-Berechtigung (im Manifest ausdrücklich entfernt)
 - Statistik-Übertragungsweg von Google ML Kit entfernt
-- keine Speicherung von Ausweisdaten, Android-Backup aus
+- Es erfolgt keine Speicherung von Ausweisdaten (Android-Backup deaktiviert)
 - Bildschirmfotos und -aufnahmen auf den Prüfseiten gesperrt
 - Tastatur angewiesen, Eingaben nicht zu lernen
 - Gespeichert werden nur selbst importierte Zertifikatslisten (öffentliche Daten)
