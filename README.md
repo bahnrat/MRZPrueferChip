@@ -1,4 +1,4 @@
-- $\color{#58a6ff}{\mathbf{Für den kommerziellen Einsatz sind zwingend die einschlägigen Rechtsvorschriften der Länder zu beachten*}}$
+- $\color{#58a6ff}{\mathbf{Für den kommerziellen Einsatz sind zwingend die einschlägigen Rechtsvorschriften der Länder zu beachten}}$
 
 # MRZ-Prüfer (Chip)
 
