@@ -12,7 +12,7 @@ Der deutsche Personalausweis kann technisch bedingt nicht offline auf Echtheit g
 ## Rechtliches
 Die App dient Test- und Übungszwecken. Sie soll die Funktionsweise der Plausibilitäts- und Echtheitsprüfung von Ausweisdokumenten zeigen. Die App ist ein Hobby-Projekt, ohne Anspruch auf Garantie und Gewährleistung. **Die Nutzung erfolgt auf eigene Gefahr.**  
 
-$\color{blue}{\large\textbf{Für den kommerziellen Einsatz sind zwingend die einschlägigen Rechtsvorschriften der Länder zu beachten!}}$
+**Für den kommerziellen Einsatz sind zwingend die einschlägigen Rechtsvorschriften der Länder zu beachten!**
 
 
 ## Funktionen
