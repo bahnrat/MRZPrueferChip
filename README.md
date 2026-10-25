@@ -7,7 +7,7 @@ Keine Internet-Berechtigung, keine Speicherung von Ausweisdaten, kein Tracking.
 Sprachen: Deutsch, Englisch, Französisch (nach Geräte- bzw. App-Sprache).
 
 **Hinweis**:  
-Der deutsche Personalausweis kann technisch bedingt nicht offline auf Echtheit geprüft werden. Der Zugriff auf **DG1/SOD** ist den Behörden vorbehalten. Offline-Echtheitsprüfung ist nur bei Ausweisdokumenten möglich, die den ICAO-Standard nutzen. Zur Echtheitsprüfung des deutschen Ausweises ist **eID-Integration** erforderlich, diese Funktion ist aus Datenschutzgründen nicht integriert. Die App folgt dem Grundsatz "**Edge computing - local only - temporary only**".  
+Der deutsche Personalausweis kann technisch bedingt nicht offline auf Echtheit geprüft werden. Der Zugriff auf **DG1/SOD** ist den Behörden vorbehalten. Offline-Echtheitsprüfung ist nur bei Ausweisdokumenten möglich, die den ICAO-Standard nutzen. Zur Echtheitsprüfung des deutschen Ausweises ist **eID-Integration** oder ein Behördenzertifikat mit Public-Key-Server erforderlich, diese Funktionen sind jedoch aus Datenschutzgründen nicht integriert. Die App folgt dem Datenschutz-Grundsatz "**Edge computing - local only and temporary only**".  
 
 Es handelt sich lediglich um Plausibilitätsprüfungen. Fälschungen können nicht zwangsläufig erkannt werden.
 
