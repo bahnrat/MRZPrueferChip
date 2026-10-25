@@ -1,0 +1,29 @@
+# Android Studio / Gradle
+.gradle/
+build/
+app/build/
+.idea/
+*.iml
+local.properties
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Signierschlüssel und Passwörter – niemals veröffentlichen
+*.jks
+*.keystore
+*.p12
+keystore.properties
+
+# Erzeugte Pakete
+*.apk
+*.aab
+
+# Zertifikatslisten (BSI/ICAO) nicht mitliefern – jeder lädt sie selbst
+*.ml
+*.ldif
+GermanMasterList*.zip
+
+# Betriebssystem
+.DS_Store
+Thumbs.db
