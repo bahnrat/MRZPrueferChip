@@ -4,6 +4,9 @@ Offline-Android-App zum Prüfen von Ausweisen, Pässen und Visa nach ICAO 9303.
 Keine Internet-Berechtigung, keine Speicherung von Ausweisdaten, kein Tracking.
 Sprachen: Deutsch, Englisch, Französisch (nach Geräte- bzw. App-Sprache).
 
+## Rechtliches
+Die App dient Test- und Übungszwecken. Sie soll die Funktionsweise der Plausibilitäts- und Echtheitsprüfung von Ausweisdokumenten zeigen. **Für den kommerziellen Einsatz sind zwingend die einschlägigen Rechtsvorschriften der Länder zu beachten**. Die App ist ein Hobby-Projekt, ohne Anspruch auf Garantie und Gewährleistung. **Die Nutzung erfolgt auf eigene Gefahr.**
+
 ## Funktionen
 
 **MRZ-Prüfung** (Kamera mit Texterkennung auf dem Gerät oder manuelle Eingabe)
