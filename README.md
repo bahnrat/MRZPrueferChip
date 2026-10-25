@@ -5,7 +5,7 @@ Keine Internet-Berechtigung, keine Speicherung von Ausweisdaten, kein Tracking.
 Sprachen: Deutsch, Englisch, Französisch (nach Geräte- bzw. App-Sprache).
 
 **Hinweis**
-Der deutsche Personalausweis kann technisch bedingt nicht auf Echtheit geprüft werden. Der Zugriff auf DG1/SOD ist den deutschen Behörden vorbehalten. Echtheitsprüfung ist nur bei Ausweisdokumenten möglich, die den ICAO-Standard nutzen. Zur Echtheitsprüfung des deutschen Ausweises ist eID erforderlich, diese Funktion ist aus Datenschutzgründen nicht integriert. Die App folgt dem Grundsatz "**Edge computing - local only - temporary only**"
+Der deutsche Personalausweis kann technisch bedingt nicht auf Echtheit geprüft werden. Der Zugriff auf DG1/SOD ist den deutschen Behörden vorbehalten. Echtheitsprüfung ist nur bei Ausweisdokumenten möglich, die den ICAO-Standard nutzen. Zur Echtheitsprüfung des deutschen Ausweises ist eID erforderlich, diese Funktion ist aus Datenschutzgründen nicht integriert. Die App folgt dem Grundsatz "**Edge computing - local only - temporary only**".
 
 ## Rechtliches
 Die App dient Test- und Übungszwecken. Sie soll die Funktionsweise der Plausibilitäts- und Echtheitsprüfung von Ausweisdokumenten zeigen. **Für den kommerziellen Einsatz sind zwingend die einschlägigen Rechtsvorschriften der Länder zu beachten**. Die App ist ein Hobby-Projekt, ohne Anspruch auf Garantie und Gewährleistung. **Die Nutzung erfolgt auf eigene Gefahr.**
@@ -44,12 +44,12 @@ keiner Verbindung zum BSI oder zur ICAO.
 
 ## Datenschutz
 
-- keine Internet-Berechtigung (im Manifest ausdrücklich entfernt)
+- Keine Internet-Berechtigung (im Manifest ausdrücklich entfernt)
 - Statistik-Übertragungsweg von Google ML Kit entfernt
 - keine Speicherung von Ausweisdaten, Android-Backup aus
 - Bildschirmfotos und -aufnahmen auf den Prüfseiten gesperrt
 - Tastatur angewiesen, Eingaben nicht zu lernen
-- gespeichert werden nur selbst importierte Zertifikatslisten (öffentliche Daten)
+- Gespeichert werden nur selbst importierte Zertifikatslisten (öffentliche Daten)
 
 ## Bauen
 
