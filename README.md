@@ -14,7 +14,7 @@ Es handelt sich lediglich um Plausibilitätsprüfungen. Fälschungen können nic
 ## Rechtliches
 Die App dient Test- und Übungszwecken. Sie soll die Funktionsweise der Plausibilitäts- und Echtheitsprüfung von Ausweisdokumenten zeigen. Die App ist ein Hobby-Projekt, ohne Anspruch auf Garantie und Gewährleistung. **Die Nutzung erfolgt auf eigene Gefahr und Eigenverantwortung.**  
 
-**Für den kommerziellen Einsatz sind zwingend die einschlägigen Rechtsvorschriften der Länder zu beachten!**
+**Wenn Sie das Projekt kommerziell nutzen wollen, z.B. Einlasskontrolle, sind zwingend die einschlägigen Rechtsvorschriften der Länder zu beachten!**
 
 
 ## Funktionen
