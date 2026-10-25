@@ -88,3 +88,20 @@ Wer die App selbst veröffentlicht, muss Impressum und Datenschutzerklärung
 AndroidX, CameraX, Material Components (Apache 2.0) · Google ML Kit Text
 Recognition (Google-Nutzungsbedingungen, nicht frei) · JMRTD, SCUBA (LGPL 2.1) ·
 Bouncy Castle (MIT)
+
+## Einsatz der App
+
+Im Ordner "MRZPruefer_App" ist eine fertig aufgebaute App enthalten. Diese kann direkt eingesetzt werden. 
+
+APK herunterladen, oder selbsterstellte App nutzen, auf das Smartphone kopieren und dort installieren. **Bei aktivierten "Google Play Protect" wird die App vor der Installation auf schädliches Verhalten geprüft. Dies ist normal. 
+
+## 🤖 Hinweis zum Android-Sideloading ab 2027
+
+Aufgrund von Systemänderungen seitens Google ab 2027 gelten für die Installation der APK folgende Besonderheiten:
+
+* **Internetverbindung erforderlich:** Android erlaubt die Installation nicht verifizierter Apps nur noch, wenn das Gerät währenddessen online ist. Eine reine Offline-Installation wird blockiert.
+* **Sicherheitswarnungen:** Android wird die App als "nicht verifiziert" blockieren. Du musst den erweiterten Warnprozess manuell bestätigen ("Trotzdem installieren") und die Installation ggf. per PIN oder Biometrie freigeben.
+* **24 Stunden Wartezeit:** Nach der Freigabe im System kann es bis zu 24 Stunden dauern, bis Google die App im Hintergrund geprüft hat und die Installation bzw. Ausführung endgültig freigeschaltet wird.
+
+Die App selbst enthält weiterhin keinerlei Tracker oder Schadsoftware – der Quellcode ist hier auf GitHub komplett transparent einsehbar.
+
