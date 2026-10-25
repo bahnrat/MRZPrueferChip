@@ -28,7 +28,7 @@ Die App dient Test- und Übungszwecken. Sie soll die Funktionsweise der Plausibi
 **Chipprüfung per NFC** (optional)
 - Zugang mit CAN oder mit den Daten der gescannten MRZ (PACE, ersatzweise BAC)
 - passive Authentisierung: Hashwert der digitalen MRZ, Signatur des Sicherheitsobjekts,
-  Wurzelzertifikat (CSCA) des Ausstellerstaats
+  Wurzelzertifikat (CSCA) des Ausstellerstaates
 - Abgleich Chip ↔ gedruckte MRZ
 - Beim deutschen Personalausweis sind die Chipdaten Behörden vorbehalten; die App meldet das.
 - Nicht geprüft: Klonschutz des Chips, Sperr- und Fahndungslisten. Lichtbild und
