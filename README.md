@@ -56,6 +56,9 @@ keiner Verbindung zum BSI oder zur ICAO.
 - Tastatur angewiesen, Eingaben nicht zu lernen
 - Gespeichert werden nur selbst importierte Zertifikatslisten (öffentliche Daten)
 
+**Hinweis**:  
+Android kann App-Daten, z.B. Anzahl der Aufrufe und Absturzdaten, speichern und an Google senden. Das ist eine Systemfunktion, keine Funktion der App. Ist dies nicht gewünscht, kann die Funktion in den Android-Einstellungen unter "Daten und Nutzung" (oder ähnlich) deaktiviert werden, diese Einstellung gilt dann Systemweit.
+
 ## Bauen
 
 Android Studio (aktuelle Version), JDK 17, Android SDK 34. Mindestens Android 8.0.
