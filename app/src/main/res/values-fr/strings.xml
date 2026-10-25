@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- app_name bleibt bewusst in values/strings.xml (gilt für alle Sprachen) -->
+    <string name="hint_digits">ZLA détectée, les chiffres de contrôle ne sont pas encore corrects – tenir immobile, changer la lumière ou la distance.</string>
+    <string name="hint_hold">Lu – tenir immobile un instant …</string>
+    <string name="no_camera_permission">Sans accès à la caméra, seule la saisie manuelle est possible.</string>
+    <string name="camera_error">Impossible de démarrer la caméra : %1$s</string>
+    <string name="torch_on">Lampe</string>
+    <string name="torch_off">Éteindre</string>
+    <string name="take_over">Reprendre</string>
+    <string name="manual">Saisir</string>
+    <string name="check">Vérifier</string>
+    <string name="scan_again">Nouveau scan</string>
+    <string name="verdict_ok">✓ Tout est cohérent</string>
+    <string name="verdict_warn">! Cohérent, mais avec remarques</string>
+    <string name="verdict_fail">✗ Erreurs détectées</string>
+    <string name="disclaimer">La vérification indique seulement si la ZLA est cohérente et plausible. Ce n\'est pas une preuve d\'authenticité : une falsification avec des chiffres de contrôle correctement calculés n\'est pas détectée ici. Toutes les données restent sur l\'appareil et ne sont pas enregistrées.</string>
+    <string name="hint_scan">Placer la zone de lecture automatique (ZLA, 2 ou 3 lignes avec &lt;&lt;&lt;) dans le cadre – verso de la carte d\'identité ou page de données du passeport.</string>
+    <string name="mrz_label">Choisir le type de document et le saisir – les parties fixes et les &lt; sont complétés automatiquement.</string>
+    <string name="hint_de_1">Ligne 1 : numéro de carte + chiffre de contrôle</string>
+    <string name="hint_de_2">Ligne 2 : naissance+CC, expiration+CC, version (2108) le cas échéant, CC global</string>
+    <string name="hint_td1_1">Ligne 1 : type pays numéro, p. ex. I NLD SPEC120144</string>
+    <string name="hint_head">Ligne 1 : type pays nom, prénoms – p. ex. P D Mustermann, Erika</string>
+    <string name="hint_data">Saisir la ligne 2 – une longue suite de &lt; peut être un seul espace</string>
+    <string name="hint_name">Nom, prénom(s)</string>
+    <string name="compare_text">COMPARAISON AVEC LE DOCUMENT\nNom : %1$s\nPrénoms : %2$s\nNé(e) le : %3$s\nNuméro de document : %4$s\nValable jusqu\'au : %5$s\nÉmetteur : %6$s · Nationalité : %7$s</string>
+    <string name="info">Mentions légales &amp; confidentialité</string>
+    <string name="back">Retour</string>
+    <string name="chip_check">Vérifier la puce (CAN, NFC)</string>
+    <string name="nfc_title">Vérification de la puce</string>
+    <string name="nfc_can_label">Numéro d\'accès (CAN, facultatif) – 6 chiffres, généralement au recto des cartes d\'identité. Sans CAN, l\'accès se fait via la ZLA scannée (habituel pour les passeports).</string>
+    <string name="nfc_enter_can">Veuillez saisir le CAN à 6 chiffres – ou scanner d\'abord la ZLA avec des chiffres de contrôle corrects.</string>
+    <string name="nfc_hold">Placer maintenant la carte à plat contre le dos du téléphone sans la bouger …</string>
+    <string name="nfc_reading">Lecture de la puce – ne pas bouger …</string>
+    <string name="nfc_again">Terminé. Pour une nouvelle vérification, présenter à nouveau le document.</string>
+    <string name="nfc_none">Cet appareil n\'a pas de NFC.</string>
+    <string name="nfc_off">Le NFC est désactivé – veuillez l\'activer dans les paramètres.</string>
+    <string name="nfc_verdict_ok">✓ Données de la puce authentiques et non modifiées</string>
+    <string name="nfc_verdict_warn">! Vérification incomplète – détails ci-dessous</string>
+    <string name="nfc_verdict_fail">✗ Échec de la vérification</string>
+    <string name="nfc_disclaimer">Sont vérifiés l\'accès, l\'empreinte et la signature des données de la puce ainsi que le certificat racine de l\'État émetteur – si une liste correspondante a été importée. Ne sont pas vérifiés la protection anti-clonage de la puce ni un éventuel signalement du document comme bloqué ou volé. La photo et les empreintes digitales ne sont pas lues. Sur la carte d\'identité allemande, les données de la puce sont réservées aux autorités. Les données du document ne sont pas enregistrées.</string>
+    <string name="nfc_hold_can">Accès avec CAN. Placer maintenant le document à plat contre le dos du téléphone sans le bouger …</string>
+    <string name="nfc_hold_mrz">Accès via la ZLA scannée. Placer le document (pour un passeport, la page de données ou la couverture contenant la puce) à plat contre le dos du téléphone sans le bouger …</string>
+    <string-array name="input_modes">
+        <item>Carte d\'identité allemande (depuis 2010)</item>
+        <item>Carte d\'identité / titre de séjour – 3 lignes (TD1)</item>
+        <item>Passeport / visa A – 2 × 44 (TD3)</item>
+        <item>Ancienne carte / visa B – 2 × 36 (TD2)</item>
+    </string-array>
+    <string name="csca_title">Certificats racines (CSCA)</string>
+    <string name="csca_loading">Chargement des certificats …</string>
+    <string name="csca_none">Aucune liste importée – l\'accès, l\'empreinte et la signature sont vérifiés, mais pas l\'origine de la signature.</string>
+    <string name="csca_loaded">%1$d certificats provenant de %2$d fichier(s) :\n%3$s</string>
+    <string name="csca_import">Importer une liste …</string>
+    <string name="csca_clear">Tout supprimer</string>
+    <string name="csca_clear_confirm">Supprimer de l\'application toutes les listes de certificats importées ?</string>
+    <string name="cancel">Annuler</string>
+    <string name="csca_import_ok">%1$d certificats importés depuis « %2$s ».</string>
+    <string name="csca_import_fail">« %1$s » ne contient aucun certificat lisible.</string>
+    <string name="csca_hint">Télécharger soi-même la liste et la sélectionner ici – l\'application ne télécharge rien sur Internet. Formats adaptés : GermanMasterList.zip du BSI (directement, sans décompresser), fichiers ICAO PKD (.ldif) ou certificats individuels (.cer, .der, .pem). N\'utiliser que des fichiers de source fiable.</string>
+</resources>

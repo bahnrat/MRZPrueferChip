@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- app_name bleibt bewusst in values/strings.xml (gilt für alle Sprachen) -->
+    <string name="hint_digits">MRZ detected, check digits not yet correct – hold still, change light or distance.</string>
+    <string name="hint_hold">Read – hold still for a moment …</string>
+    <string name="no_camera_permission">Without camera access only manual entry is possible.</string>
+    <string name="camera_error">Camera could not be started: %1$s</string>
+    <string name="torch_on">Light on</string>
+    <string name="torch_off">Light off</string>
+    <string name="take_over">Use reading</string>
+    <string name="manual">Type in</string>
+    <string name="check">Check</string>
+    <string name="scan_again">Scan again</string>
+    <string name="verdict_ok">✓ Everything consistent</string>
+    <string name="verdict_warn">! Consistent, but with remarks</string>
+    <string name="verdict_fail">✗ Errors found</string>
+    <string name="disclaimer">The check only shows whether the MRZ is internally consistent and plausible. It is not proof of authenticity: a forgery with correctly calculated check digits is not detected here. All data stays on the device and is not stored.</string>
+    <string name="hint_scan">Hold the machine-readable zone (2 or 3 lines with &lt;&lt;&lt;) inside the frame – back of the ID card or passport data page.</string>
+    <string name="mrz_label">Choose the document type and type it in – fixed parts and &lt; are added automatically.</string>
+    <string name="hint_de_1">Line 1: card number + check digit</string>
+    <string name="hint_de_2">Line 2: birth date+CD, expiry+CD, version (2108) if any, composite CD</string>
+    <string name="hint_td1_1">Line 1: type country number, e.g. I NLD SPEC120144</string>
+    <string name="hint_head">Line 1: type country surname, given names – e.g. P D Mustermann, Erika</string>
+    <string name="hint_data">Type line 2 – a long &lt; run can be a single space</string>
+    <string name="hint_name">Surname, given name(s)</string>
+    <string name="compare_text">COMPARE WITH THE DOCUMENT\nSurname: %1$s\nGiven names: %2$s\nBorn: %3$s\nDocument number: %4$s\nValid until: %5$s\nIssuer: %6$s · Nationality: %7$s</string>
+    <string name="info">Legal notice &amp; privacy</string>
+    <string name="back">Back</string>
+    <string name="chip_check">Check chip (CAN, NFC)</string>
+    <string name="nfc_title">Chip check</string>
+    <string name="nfc_can_label">Card access number (CAN, optional) – 6 digits, usually on the front of ID cards. Without a CAN, access uses the scanned MRZ (usual for passports).</string>
+    <string name="nfc_enter_can">Please enter the 6-digit CAN – or first scan the MRZ with correct check digits.</string>
+    <string name="nfc_hold">Now hold the ID card flat against the back of the phone and do not move it …</string>
+    <string name="nfc_reading">Reading chip – do not move …</string>
+    <string name="nfc_again">Done. For a new check, hold the document against the phone again.</string>
+    <string name="nfc_none">This device has no NFC.</string>
+    <string name="nfc_off">NFC is switched off – please switch it on in the settings.</string>
+    <string name="nfc_verdict_ok">✓ Chip data genuine and unaltered</string>
+    <string name="nfc_verdict_warn">! Not fully verifiable – details below</string>
+    <string name="nfc_verdict_fail">✗ Check failed</string>
+    <string name="nfc_disclaimer">Checked are access, hash and signature of the chip data and the issuing state\'s root certificate – if a matching list has been imported. Not checked are the chip\'s clone protection and whether the document is reported blocked or stolen. Facial image and fingerprints are not read. On the German ID card the chip data is reserved for authorities. Document data is not stored.</string>
+    <string name="nfc_hold_can">Access with CAN. Now hold the document flat against the back of the phone and do not move it …</string>
+    <string name="nfc_hold_mrz">Access via the scanned MRZ. Hold the document (for passports the data page or the cover containing the chip) flat against the back of the phone and do not move it …</string>
+    <string-array name="input_modes">
+        <item>German ID card (from 2010)</item>
+        <item>ID card / residence permit – 3 lines (TD1)</item>
+        <item>Passport / visa A – 2 × 44 (TD3)</item>
+        <item>Old ID card / visa B – 2 × 36 (TD2)</item>
+    </string-array>
+    <string name="csca_title">Root certificates (CSCA)</string>
+    <string name="csca_loading">Loading certificates …</string>
+    <string name="csca_none">No list imported – access, hash and signature are checked, but not the origin of the signature.</string>
+    <string name="csca_loaded">%1$d certificates from %2$d file(s):\n%3$s</string>
+    <string name="csca_import">Import list …</string>
+    <string name="csca_clear">Remove all</string>
+    <string name="csca_clear_confirm">Remove all imported certificate lists from the app?</string>
+    <string name="cancel">Cancel</string>
+    <string name="csca_import_ok">%1$d certificates imported from “%2$s”.</string>
+    <string name="csca_import_fail">“%1$s” contains no readable certificates.</string>
+    <string name="csca_hint">Download the list yourself and select it here – the app downloads nothing from the internet. Suitable: GermanMasterList.zip from the BSI (directly, no need to unzip), ICAO PKD files (.ldif) or single certificates (.cer, .der, .pem). Only use files from a trustworthy source.</string>
+</resources>

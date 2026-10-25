@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">MRZ-Prüfer (Chip)</string>
+    <string name="hint_digits">MRZ erkannt, Prüfziffern stimmen noch nicht – ruhig halten, Licht oder Abstand ändern.</string>
+    <string name="hint_hold">Gelesen – kurz ruhig halten …</string>
+    <string name="no_camera_permission">Ohne Kamerazugriff ist nur die manuelle Eingabe möglich.</string>
+    <string name="camera_error">Kamera konnte nicht gestartet werden: %1$s</string>
+    <string name="torch_on">Licht an</string>
+    <string name="torch_off">Licht aus</string>
+    <string name="take_over">Übernehmen</string>
+    <string name="manual">Eintippen</string>
+    <string name="check">Prüfen</string>
+    <string name="scan_again">Neu scannen</string>
+    <string name="verdict_ok">✓ Alles stimmig</string>
+    <string name="verdict_warn">! Stimmig, aber mit Auffälligkeiten</string>
+    <string name="verdict_fail">✗ Fehler gefunden</string>
+    <string name="disclaimer">Die Prüfung zeigt nur, ob die MRZ in sich stimmig und plausibel ist. Sie ist kein Echtheitsnachweis: Eine Fälschung mit korrekt berechneten Prüfziffern fällt hier nicht auf. Alle Daten bleiben auf dem Gerät und werden nicht gespeichert.</string>
+    <string name="hint_scan">Die maschinenlesbare Zone (2 oder 3 Zeilen mit &lt;&lt;&lt;) in den Rahmen halten – Ausweisrückseite oder Passdatenseite.</string>
+    <string name="mrz_label">Dokumentart wählen und abtippen – feste Teile und &lt; werden ergänzt.</string>
+    <string name="hint_de_1">Zeile 1: Ausweisnummer + Prüfziffer</string>
+    <string name="hint_de_2">Zeile 2: Geb.-Datum+PZ, Ablauf+PZ, ggf. Version (2108), Gesamt-PZ</string>
+    <string name="hint_td1_1">Zeile 1: Art Land Nummer, z. B. I NLD SPEC120144</string>
+    <string name="hint_head">Zeile 1: Art Land Name, Vorname – z. B. P D Mustermann, Erika</string>
+    <string name="hint_data">Zeile 2 abtippen – lange &lt;-Kette als ein Leerzeichen</string>
+    <string name="hint_name">Name, Vorname(n)</string>
+    <string-array name="input_modes">
+        <item>Deutscher Personalausweis (ab 2010)</item>
+        <item>ID-Karte / Aufenthaltstitel – 3 Zeilen (TD1)</item>
+        <item>Reisepass / Visum A – 2 × 44 (TD3)</item>
+        <item>Alter Ausweis / Visum B – 2 × 36 (TD2)</item>
+    </string-array>
+    <string name="compare_text">ABGLEICH MIT DEM DOKUMENT\nName: %1$s\nVorname: %2$s\nGeboren: %3$s\nDokumentnummer: %4$s\nGültig bis: %5$s\nAussteller: %6$s · Staatsangehörigkeit: %7$s</string>
+    <string name="info">Impressum &amp; Datenschutz</string>
+    <string name="back">Zurück</string>
+    <string name="chip_check">Chip prüfen (CAN, NFC)</string>
+    <string name="nfc_title">Chipprüfung</string>
+    <string name="nfc_can_label">Zugangsnummer (CAN, optional) – 6 Ziffern, bei Ausweisen meist auf der Vorderseite. Ohne CAN erfolgt der Zugang über die gescannte MRZ (bei Reisepässen üblich).</string>
+    <string name="nfc_enter_can">Bitte die 6-stellige CAN eingeben – oder zuerst die MRZ mit stimmigen Prüfziffern scannen.</string>
+    <string name="nfc_hold">Ausweis jetzt flach an die Rückseite des Handys halten und nicht bewegen …</string>
+    <string name="nfc_reading">Chip wird gelesen – nicht bewegen …</string>
+    <string name="nfc_again">Fertig. Für eine neue Prüfung den Ausweis erneut anhalten.</string>
+    <string name="nfc_none">Dieses Gerät hat kein NFC.</string>
+    <string name="nfc_off">NFC ist ausgeschaltet – bitte in den Einstellungen einschalten.</string>
+    <string name="nfc_verdict_ok">✓ Chipdaten echt und unverändert</string>
+    <string name="nfc_verdict_warn">! Nicht vollständig prüfbar – Einzelheiten unten</string>
+    <string name="nfc_verdict_fail">✗ Prüfung fehlgeschlagen</string>
+    <string name="nfc_disclaimer">Geprüft werden Zugang, Hashwert und Signatur der Chipdaten sowie das Wurzelzertifikat des Ausstellerstaats – sofern eine passende Liste importiert ist. Nicht geprüft werden der Klonschutz des Chips und ob das Dokument gesperrt oder gestohlen gemeldet ist. Lichtbild und Fingerabdrücke werden nicht gelesen. Beim deutschen Personalausweis sind die Chipdaten Behörden vorbehalten. Ausweisdaten werden nicht gespeichert.</string>
+    <string name="nfc_hold_can">Zugang mit CAN. Dokument jetzt flach an die Rückseite des Handys halten und nicht bewegen …</string>
+    <string name="nfc_hold_mrz">Zugang über die gescannte MRZ. Dokument (beim Pass die Datenseite bzw. den Deckel mit dem Chip) flach an die Rückseite des Handys halten und nicht bewegen …</string>
+    <string name="csca_title">Wurzelzertifikate (CSCA)</string>
+    <string name="csca_loading">Zertifikate werden geladen …</string>
+    <string name="csca_none">Keine Liste importiert – Zugang, Hashwert und Signatur werden geprüft, die Herkunft der Signatur aber nicht.</string>
+    <string name="csca_loaded">%1$d Zertifikate aus %2$d Datei(en):\n%3$s</string>
+    <string name="csca_import">Liste importieren …</string>
+    <string name="csca_clear">Alle entfernen</string>
+    <string name="csca_clear_confirm">Alle importierten Zertifikatslisten aus der App entfernen?</string>
+    <string name="cancel">Abbrechen</string>
+    <string name="csca_import_ok">%1$d Zertifikate aus „%2$s“ übernommen.</string>
+    <string name="csca_import_fail">„%1$s“ enthält keine lesbaren Zertifikate.</string>
+    <string name="csca_hint">Die Liste selbst herunterladen und hier auswählen – die App lädt nichts aus dem Internet. Geeignet: GermanMasterList.zip vom BSI (direkt, ohne Entpacken), ICAO-PKD-Dateien (.ldif) oder einzelne Zertifikate (.cer, .der, .pem). Nur Dateien aus vertrauenswürdiger Quelle verwenden.</string>
+</resources>
