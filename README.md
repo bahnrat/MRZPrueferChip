@@ -1,3 +1,8 @@
+```diff
+- Dieser Text wird rot dargestellt (Minus am Anfang)
++ Dieser Text wird grün dargestellt (Plus am Anfang)
+```
+
 # MRZ-Prüfer (Chip)
 
 Offline-Android-App zum Prüfen von Ausweisen, Pässen und Visa nach ICAO 9303.
