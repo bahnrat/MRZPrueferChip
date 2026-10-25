@@ -95,7 +95,7 @@ Im Ordner "MRZPruefer_App" ist eine fertig aufgebaute App enthalten. Diese kann 
 
 APK herunterladen, oder selbsterstellte App nutzen, auf das Smartphone kopieren und dort installieren. **Bei aktivierten "Google Play Protect" wird die App vor der Installation auf schädliches Verhalten geprüft. Dies ist normal. 
 
-## 🤖 Hinweis zum Android-Sideloading ab 2027
+## Hinweis zum Android-Sideloading ab 2027
 
 Aufgrund von Systemänderungen seitens Google ab 2027 gelten für die Installation der APK folgende Besonderheiten:
 
