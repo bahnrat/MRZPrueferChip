@@ -68,7 +68,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="4dp"
             android:layout_weight="1"
-            android:enabled="false"
+            android:visibility="invisible"
             android:text="@string/take_over" />
 
         <Button
