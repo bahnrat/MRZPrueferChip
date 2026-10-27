@@ -24,6 +24,7 @@ Die App dient Test- und Übungszwecken. Sie soll die Funktionsweise der Plausibi
 - alle Prüfziffern inkl. Gesamtprüfziffer, verlängerte Dokumentnummern
 - Plausibilität von Datum, Ländercodes, Namensfeld
 - Zusatzregeln für deutsche Ausweise und Pässe (Zeichenvorrat, Dokumentversion u. a.)
+- Die App funktioniert auch ohne Kamera-Berechtigung. Die Daten müssen dann manuell eingegeben werden.
 
 **Chipprüfung per NFC** (optional)
 - Zugang mit CAN oder mit den Daten der gescannten MRZ (PACE, ersatzweise BAC)
