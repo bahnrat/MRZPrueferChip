@@ -80,7 +80,11 @@ public class ResultActivity extends AppCompatActivity {
         findViewById(R.id.btnCheck).setOnClickListener(v -> runCheck());
         findViewById(R.id.btnInfo).setOnClickListener(v ->
                 startActivity(new android.content.Intent(this, InfoActivity.class)));
-        findViewById(R.id.btnScan).setOnClickListener(v -> finish());
+        findViewById(R.id.btnScan).setOnClickListener(v -> {
+            // Eingaben verwerfen; der Scanner leert beim Zurückkehren seinen Speicher
+            for (EditText e : fields) e.setText("");
+            finish();
+        });
         findViewById(R.id.btnChip).setOnClickListener(v -> {
             for (int i = 0; i < mode.format.lines; i++) fill(fields[i], i + 1);
             android.content.Intent in = new android.content.Intent(this, NfcActivity.class);

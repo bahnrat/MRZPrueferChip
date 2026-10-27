@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.util.Size;
+import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -13,6 +14,7 @@ import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.annotation.OptIn;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.camera.core.Camera;
+import androidx.lifecycle.Lifecycle;
 import androidx.camera.core.CameraSelector;
 import androidx.camera.core.ExperimentalGetImage;
 import androidx.camera.core.ImageAnalysis;
@@ -56,6 +58,7 @@ public class MainActivity extends AppCompatActivity {
     private volatile boolean done = false;
     private String lastValid = null;          // zuletzt gefundene stimmige MRZ
     private String[] lastSeen = null;         // zuletzt gelesene MRZ, auch fehlerhaft
+    private boolean clearOnReturn = false;    // nach der Ergebnisseite leer weitermachen
 
     private final ActivityResultLauncher<String> permission =
             registerForActivityResult(new ActivityResultContracts.RequestPermission(), granted -> {
@@ -77,8 +80,10 @@ public class MainActivity extends AppCompatActivity {
 
         findViewById(R.id.btnInfo).setOnClickListener(v ->
                 startActivity(new android.content.Intent(this, InfoActivity.class)));
-        findViewById(R.id.btnManual).setOnClickListener(v ->
-                startActivity(new Intent(this, ResultActivity.class)));
+        findViewById(R.id.btnManual).setOnClickListener(v -> {
+            clearOnReturn = true;
+            startActivity(new Intent(this, ResultActivity.class));
+        });
         btnTakeOver.setOnClickListener(v -> {
             if (lastSeen != null) openResult(lastSeen);
         });
@@ -104,8 +109,29 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
+        if (clearOnReturn) clearSession();
         done = false;
         lastValid = null;
+        status.setText(R.string.hint_scan);
+    }
+
+    /**
+     * Speicher leeren: letzte Lesung vergessen, „Übernehmen“ ausblenden, Licht aus.
+     * Aufgerufen nach „Neu scannen“ bzw. Rückkehr von der Ergebnisseite und vom
+     * Auto-Reset ({@link App}) bei Bildschirmsperre oder Wechsel in den Hintergrund.
+     */
+    void clearSession() {
+        clearOnReturn = false;
+        lastSeen = null;
+        lastValid = null;
+        done = false;
+        if (btnTakeOver == null) return;     // Seite noch im Aufbau
+        btnTakeOver.setVisibility(View.INVISIBLE);
+        if (torchOn && camera != null) {
+            camera.getCameraControl().enableTorch(false);
+            torchOn = false;
+            btnTorch.setText(R.string.torch_on);
+        }
         status.setText(R.string.hint_scan);
     }
 
@@ -150,7 +176,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void handleText(Text text) {
-        if (done) return;
+        // Späte Ergebnisse nach dem Verlassen der Seite verwerfen (Auto-Reset)
+        if (done || !getLifecycle().getCurrentState().isAtLeast(Lifecycle.State.RESUMED)) return;
 
         // Alle erkannten Zeilen von oben nach unten sortieren
         List<Text.Line> lines = new ArrayList<>();
@@ -168,7 +195,7 @@ public class MainActivity extends AppCompatActivity {
 
         String[] best = Mrz.bestReading(found);
         lastSeen = best != null ? best : Mrz.ocrCorrect(found);
-        btnTakeOver.setEnabled(true);
+        btnTakeOver.setVisibility(View.VISIBLE);
 
         if (best == null) {
             status.setText(R.string.hint_digits);
@@ -188,6 +215,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void openResult(String[] mrz) {
         done = true;
+        clearOnReturn = true;
         if (torchOn && camera != null) {
             camera.getCameraControl().enableTorch(false);
             torchOn = false;

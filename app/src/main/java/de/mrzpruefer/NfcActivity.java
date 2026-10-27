@@ -84,7 +84,10 @@ public class NfcActivity extends AppCompatActivity implements NfcAdapter.ReaderC
 
         cscaInfo = findViewById(R.id.cscaInfo);
         btnClear = findViewById(R.id.btnCscaClear);
-        findViewById(R.id.btnCscaImport).setOnClickListener(v -> pickFile.launch(new String[]{"*/*"}));
+        findViewById(R.id.btnCscaImport).setOnClickListener(v -> {
+            App.allowLeaveOnce();        // Dateiauswahl ist eine andere App – kein Auto-Reset
+            pickFile.launch(new String[]{"*/*"});
+        });
         btnClear.setOnClickListener(v -> new AlertDialog.Builder(this)
                 .setMessage(R.string.csca_clear_confirm)
                 .setPositiveButton(R.string.csca_clear, (d, w) -> { CscaStore.clear(this); reloadCscas(); })
