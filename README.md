@@ -94,7 +94,7 @@ Bouncy Castle (MIT)
 
 ## Einsatz der App
 
-Im Ordner "MRZPruefer_App" ist eine fertig aufgebaute App enthalten. Diese kann direkt eingesetzt werden. 
+Unter "Releases" ist eine fertig aufgebaute App enthalten. Diese kann direkt eingesetzt werden. 
 
 APK herunterladen, oder selbsterstellte App nutzen, auf das Smartphone kopieren und dort installieren. **Bei aktivierten "Google Play Protect" wird die App vor der Installation auf schädliches Verhalten geprüft. Dies ist normal.**
 
