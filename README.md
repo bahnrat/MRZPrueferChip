@@ -58,6 +58,8 @@ keiner Verbindung zum BSI oder zur ICAO.
 - Bildschirmfotos und -aufnahmen auf den Prüfseiten gesperrt
 - Tastatur angewiesen, Eingaben nicht zu lernen
 - Gespeichert werden nur selbst importierte Zertifikatslisten (öffentliche Daten)
+- Eine Auto-Reset-Funktion löscht alle Daten bei Verlassen der App (Wenn die App in den Hintergrund geht oder die Bildschirmsperre aktiv wird)
+- "Neu scannen" löscht den Speicher
 
 **Hinweis**:  
 Android kann App-Daten, z.B. Anzahl der Aufrufe und Absturzdaten, speichern und an Google senden. Das ist eine Systemfunktion, keine Funktion der App. Ist dies nicht gewünscht, kann die Funktion in den Android-Einstellungen unter "Daten und Nutzung" (oder ähnlich) deaktiviert werden, diese Einstellung gilt dann Systemweit.
