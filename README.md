@@ -58,7 +58,7 @@ keiner Verbindung zum BSI oder zur ICAO.
 - Bildschirmfotos und -aufnahmen auf den Prüfseiten gesperrt
 - Tastatur angewiesen, Eingaben nicht zu lernen
 - Gespeichert werden nur selbst importierte Zertifikatslisten (öffentliche Daten)
-- Eine Auto-Reset-Funktion löscht alle Daten bei Verlassen der App (Wenn die App in den Hintergrund geht oder die Bildschirmsperre aktiv wird)
+- Eine Auto-Reset-Funktion löscht alle Daten bei Verlassen der App (Wenn die App in den Hintergrund geht, die Bildschirmsperre aktiv wird, oder ein Aruf eingeht)
 - "Neu scannen" löscht den Speicher
 
 **Hinweis**:  
