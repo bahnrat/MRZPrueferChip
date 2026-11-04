@@ -64,7 +64,7 @@ keiner Verbindung zum BSI oder zur ICAO.
 **Hinweise**:  
 Android kann App-Daten, z.B. Anzahl der Aufrufe und Absturzdaten, speichern und an Google senden. Das ist eine Systemfunktion, keine Funktion der App. Ist dies nicht gewünscht, kann die Funktion in den Android-Einstellungen unter "Daten und Nutzung" (oder ähnlich) deaktiviert werden, diese Einstellung gilt dann Systemweit.
 
-KI-Funktionen können Bildschirminhalte im Hintergrund analysieren, somit (theoretisch) Texte in der App. Um dies zu verhindern, können sie KI-Funktionen, wie z.B. "Bildschirmkontext verwenden" deaktivieren. Oder Sie deaktivieren die KI auf ihrem Smartphone komplett. Oder setzen Sie die KI-Nutzung auf "Nur lokal nutzen".
+KI-Funktionen können Bildschirminhalte im Hintergrund analysieren, somit (theoretisch) Texte in der App. Um dies zu verhindern, können sie KI-Funktionen, wie z.B. "Bildschirmkontext verwenden", deaktivieren. Oder Sie deaktivieren die KI auf ihrem Smartphone komplett. Oder setzen Sie die KI-Nutzung auf "Nur lokal nutzen".
 
 ## Bauen
 
