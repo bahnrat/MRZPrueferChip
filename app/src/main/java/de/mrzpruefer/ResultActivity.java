@@ -44,7 +44,20 @@ public class ResultActivity extends AppCompatActivity {
         getWindow().setFlags(android.view.WindowManager.LayoutParams.FLAG_SECURE,
                 android.view.WindowManager.LayoutParams.FLAG_SECURE);
         setContentView(R.layout.activity_result);
-
+// KI- und Hintergrunddienste fernhalten
+        android.view.View root = findViewById(android.R.id.content);
+// Text-Erfassung des Systems (Content Capture) für die ganze Seite abschalten – ab Android 11
+        if (android.os.Build.VERSION.SDK_INT >= 30) {
+            root.setImportantForContentCapture(android.view.View.IMPORTANT_FOR_CONTENT_CAPTURE_NO_EXCLUDE_DESCENDANTS);
+        }
+// Inhalte nur für echte Bedienungshilfen (z. B. TalkBack), nicht für andere Apps – ab Android 14
+        if (android.os.Build.VERSION.SDK_INT >= 34) {
+            root.setAccessibilityDataSensitive(android.view.View.ACCESSIBILITY_DATA_SENSITIVE_YES);
+        }
+// Fremde Overlays über dieser Seite ausblenden – ab Android 12
+        if (android.os.Build.VERSION.SDK_INT >= 31) {
+            getWindow().setHideOverlayWindows(true);
+        }
         e1 = findViewById(R.id.line1);
         e2 = findViewById(R.id.line2);
         e3 = findViewById(R.id.line3);
