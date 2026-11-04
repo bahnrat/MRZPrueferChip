@@ -24,7 +24,7 @@
             android:text="@string/nfc_can_label"
             android:textSize="14sp" />
 
-        <EditText
+        <de.mrzpruefer.SecureEditText
             android:id="@+id/can"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
