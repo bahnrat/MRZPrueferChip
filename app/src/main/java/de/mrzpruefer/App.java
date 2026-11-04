@@ -42,6 +42,7 @@ public class App extends Application implements Application.ActivityLifecycleCal
 
     @Override
     public void onCreate() {
+        java.util.logging.Logger.getLogger("org.jmrtd").setLevel(java.util.logging.Level.OFF);
         super.onCreate();
         instance = this;
         registerActivityLifecycleCallbacks(this);
