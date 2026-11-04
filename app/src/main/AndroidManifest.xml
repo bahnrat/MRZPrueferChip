@@ -11,7 +11,8 @@
     <!-- Bewusst offline: Internetzugriff entfernen, den Bibliotheken sonst einbringen -->
     <uses-permission android:name="android.permission.INTERNET" tools:node="remove" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" tools:node="remove" />
-
+    <!-- Gegen fremde Apps schuetzen -->
+    <uses-permission android:name="android.permission.HIDE_OVERLAY_WINDOWS" />
     <application
         android:name=".App"
         android:localeConfig="@xml/locales_config"
